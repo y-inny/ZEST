@@ -1,5 +1,13 @@
 @charset "utf-8";
 
+@font-face {
+    font-family: 'Quentin';
+    src: url(../fonts/Quentin.woff2) format('woff2');
+    src: url(../fonts/Quentin.woff) format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 *,
 *::before,
 *::after {
@@ -395,6 +403,7 @@ body {
 }
 
 .section1_slogan {
+    font-family: 'Quentin';
     /* color: #ffff00; */
     position: absolute;
     top: 50%;
@@ -1107,26 +1116,26 @@ body {
     /* 제스트치약 레몬 */
     width: 32%;
     position: absolute;
-    top: 110px;
-    left: 217px;
+    top: 60px;
+    left: 220px;
     z-index: 8;
 }
 
 .test03_img_2 {
     /* 제스트가글 레몬 */
-    width: 32%;
+    width: 28%;
     position: absolute;
-    top: 190px;
-    left: 380px;
+    top: 160px;
+    left: 410px;
     z-index: 9;
 }
 
 .test03_img_3 {
     /* 제스트츄어블치약 레몬 */
-    width: 45%;
+    width: 29%;
     position: absolute;
-    top: 220px;
-    left: 95px;
+    top: 240px;
+    left: 185px;
     z-index: 10;
 }
 
