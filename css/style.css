@@ -1,0 +1,1622 @@
+@charset "utf-8";
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+    font-family: 'SUIT Variable', sans-serif;
+    font-size: 14px;
+    line-height: 1.5em;
+    font-weight: 400;
+
+    box-sizing: border-box;
+    /* padding-top: 60px; */
+    overflow-x: hidden;
+
+    /* background-color: #222; */
+}
+
+#header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    /* max-width: 1920px; */
+    z-index: 999;
+    background-color: #111;
+}
+
+
+.inner_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100%;
+    max-width: 1520px;
+    margin: 0 auto;
+    height: 60px;
+    background-color: #111;
+    color: #fff;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.logo:hover {
+    transform: rotateY(30deg);
+    transition: all 0.5s;
+}
+
+.logo img {
+    width: 83px;
+    /* height: 24px; */
+}
+
+.gnb_wrap {
+    position: relative;
+    display: inline-block;
+}
+
+.gnb {
+    display: flex;
+    gap: 50px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.gnb li a {
+    display: block;
+    padding: 10px 20px;
+    position: relative;
+}
+
+.gnb li a:hover {
+    color: #ffff00;
+}
+
+.gnb_bar {
+    position: absolute;
+    display: block;
+    bottom: -9px;
+    left: 0;
+    width: 90px;
+    height: 2px;
+    background: #ffff00;
+    opacity: 0;
+    transition: all 0.4s ease;
+    /* filter: blur(1px); */
+    pointer-events: none;
+}
+
+
+
+
+
+.util {
+    display: flex;
+    gap: 19px;
+}
+
+.util li {
+    width: 40px;
+    padding-top: 2px;
+}
+
+/* .util img {
+    width: 120%;
+} */
+
+.util .icon {
+    display: block;
+    width: 48px;
+    height: 48px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition: 0.25s ease;
+}
+
+.icon:hover {
+    /* transform: scaleY(50%);
+    transition: all 0.5s; */
+}
+
+.icon-search {
+    background-image: url(../img/util_icon_01.png);
+}
+
+.icon-mypage {
+    background-image: url(../img/util_icon_02.png);
+}
+
+.icon-cart {
+    background-image: url(../img/util_icon_03.png);
+}
+
+.icon-search:hover {
+    background-image: url("../img/util_icon_01_hover.png");
+}
+
+.icon-mypage:hover {
+    background-image: url("../img/util_icon_02_hover.png");
+}
+
+.icon-cart:hover {
+    background-image: url("../img/util_icon_03_hover.png");
+}
+
+.btn_1,
+.btn_2 {
+    position: fixed;
+    opacity: 0;
+    right: -50px;
+    transition: all 0.6s ease;
+    z-index: 2000;
+}
+
+.btn_visible {
+    opacity: 1;
+    /* right: 50px; */
+}
+
+.btn_1 a,
+.btn_2 a {
+    position: relative;
+    display: block;
+}
+
+.btn_1 a img:nth-child(2),
+.btn_2 a img:nth-child(2) {
+    width: 35%;
+}
+
+.btn_1 {
+    bottom: 145px;
+}
+
+.btn_1:hover .btn_1_icon {
+    transform: translate(-50%, -50%) rotate(-360deg);
+    transition: all 0.7s;
+
+}
+
+.btn_2 {
+    bottom: 60px;
+}
+
+.btn_2:hover .btn_2_icon {
+    animation: iconBounce 0.5s ease forwards;
+}
+
+@keyframes iconBounce {
+    0% {
+        transform: translate(-50%, -50%);
+    }
+
+    50% {
+        transform: translate(-50%, -100%);
+        /* 위로 슉 */
+    }
+
+    100% {
+        transform: translate(-50%, -50%);
+        /* 다시 원위치 */
+    }
+}
+
+
+.btn_1_icon,
+.btn_2_icon {
+    position: absolute;
+    transform: translate(-50%, -50%) rotate(0deg);
+    transition: transform 0.3s ease;
+    z-index: 2;
+}
+
+.btn_1_icon {
+    top: 48%;
+    left: 17.5%;
+    width: 20%;
+}
+
+.btn_2_icon {
+    top: 47%;
+    left: 17.5%;
+    width: 14%;
+    transform: translate(-50%, -50%);
+    transition: transform 0.4s ease;
+    /* hover 해제 시 부드러운 복귀 */
+    animation: none;
+}
+
+
+
+
+
+
+.visual_wrap {
+    width: 100%;
+    max-width: 1920px;
+    margin: 0 auto;
+    height: 770px;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    position: relative;
+    opacity: 1;
+    transition: opacity 1.4s ease;
+    /* 페이드 */
+}
+
+.visual_bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    transition: opacity 1.4s ease;
+    z-index: 1;
+}
+
+.visual_bg.active {
+    opacity: 1;
+    z-index: 2;
+}
+
+.bg1 {
+    background-image: url("../img/visual_1.png");
+}
+
+.bg2 {
+    background-image: url("../img/visual_2.jpg");
+}
+
+.bg3 {
+    background-image: url("../img/visual_3.jpg");
+}
+
+.bg4 {
+    background-image: url("../img/visual_4.jpg");
+}
+
+
+.visual_text {
+    width: 500px;
+    height: 390px;
+    margin-right: 350px;
+    margin-top: 10px;
+    position: absolute;
+    top: 200px;
+    right: 0;
+    padding: 35px 25px;
+    box-sizing: border-box;
+    text-align: center;
+    z-index: 995;
+
+}
+
+.visual_title {
+    font-size: 65px;
+    font-weight: 900;
+    line-height: 1.2em;
+    margin-bottom: 50px;
+}
+
+.visual_slogan {
+    font-size: 22px;
+    margin-bottom: 50px;
+}
+
+.visual_btn {
+    padding-top: 10px;
+}
+
+.visual_btn a {
+    font-size: 20px;
+    font-weight: 900;
+    background-color: #ffff00;
+    padding: 20px 37px;
+    border-radius: 100px;
+}
+
+.visual_btn a:hover {
+    box-shadow: 0px 3px 10px rgba(39, 38, 31, 0.2);
+    transition: all 0.2s;
+}
+
+.visual_indicator {
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 12px;
+    z-index: 998;
+}
+
+.visual_indicator span {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.4);
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.visual_indicator span.active {
+    background: rgba(255, 255, 255, 1);
+}
+
+
+/* 타이틀 공통*/
+.section_title {
+
+    padding-top: 100px;
+    text-align: center;
+    font-size: 52px;
+    font-weight: 900;
+
+    color: #fff;
+}
+
+/* section1 */
+#section1 {
+    background-color: #111;
+    color: #fff;
+
+    text-align: center;
+}
+
+.sec1_wrap {
+    width: 1050px;
+    margin: 0 auto;
+    background: url(../img/sec1_bg.png) no-repeat center 150px;
+    background-size: 52%;
+
+    position: relative;
+    /* .section1_slogan의 기준 */
+}
+
+.section1_slogan {
+    /* color: #ffff00; */
+    position: absolute;
+    top: 50%;
+    left: 17%;
+    transform: rotate(-14deg);
+
+    transform-origin: left center;
+    /* 회전 기준 보정 */
+
+    overflow: visible;
+    /* 회전으로 인한 잘림 방지 */
+
+    white-space: nowrap;
+    /* 줄바꿈 방지(필요하면 제거) */
+
+    /* transition: all 0.8s; */
+}
+
+.gradient-text {
+    display: inline-block;
+    font-size: 72px;
+    font-family: "Quentin";
+    font-weight: 500;
+    line-height: 1.5;
+
+    background: linear-gradient(90deg,
+            #ff9900,
+            #ff9900,
+            #ffff00,
+            #ffff00,
+            #ffff00);
+
+    background-size: 300% 300%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    /* text-shadow: 0px 2px 2px rgba(189, 160, 0, 0.7); */
+
+    /* ✨ 그라디언트가 일렁이는 애니메이션 */
+    animation: gradientFlow 5s ease infinite;
+}
+
+/* 그라디언트 자연스럽게 흐르는 keyframe */
+@keyframes gradientFlow {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+
+
+
+.sec1_text {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 540px;
+    padding-bottom: 100px;
+}
+
+.sec1_text_title {
+    display: block;
+    padding-bottom: 20px;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.sec1_text li p {
+    font-size: 14px;
+}
+
+
+/* section2 */
+#section2 {
+    background-color: #222;
+}
+
+.sec2_wrap {
+    height: 1200px;
+}
+
+.sec2_best {
+    width: 1320px;
+    height: 400px;
+    margin: 80px auto 125px;
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+}
+
+.sec2_best li {
+    width: 250px;
+    height: 370px;
+}
+
+.sec2_best_img_wrap {
+    width: 250px;
+    height: 250px;
+    margin-bottom: 25px;
+
+    background-color: #111;
+    overflow: hidden;
+
+    position: relative;
+    /* 베스트아이템 위치 기준 */
+}
+
+.sec2_best_img_wrap img:hover {
+    transform: scale(1.1);
+    transition: all 0.3s;
+}
+
+.best_number {
+    color: #fff;
+    font-size: 48px;
+    font-weight: 900;
+    padding: 26px 20px;
+    /* opacity: ; */
+}
+
+.best_img1 {
+    /* 베스트 - 츄어블 치약 이미지 */
+    position: absolute;
+    top: 13px;
+    left: -62px;
+    width: 150%;
+}
+
+.best_img2 {
+    /* 베스트 - 오리지널 치약 이미지 */
+    position: absolute;
+    top: 30px;
+    left: -6px;
+    width: 100%;
+}
+
+.best_img3 {
+    /* 베스트 - 가글 이미지 */
+    position: absolute;
+    top: 21px;
+    left: -22px;
+    width: 120%;
+}
+
+.best_img4 {
+    /* 베스트 - 백팩 이미지 */
+    position: absolute;
+    top: 20px;
+    left: -30px;
+    width: 125%;
+}
+
+.sec2_best_text_wrap {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.product_name {
+    font-weight: 500;
+}
+
+.price_wrap {
+    display: flex;
+    gap: 15px;
+    margin-top: 15px;
+    margin-bottom: 25px;
+}
+
+.product_price_origin {
+    font-size: 14px;
+    color: #9a9a9a;
+}
+
+.add_cart {
+    display: inline-block;
+    font-size: 14px;
+    padding: 3px 0;
+    box-sizing: border-box;
+}
+
+.sec2_best li:hover .best_number {
+    color: #ffff00;
+    transition: all 0.2s;
+}
+
+.sec2_best li:hover .product_name {
+    /* color: #ffff00; */
+    transition: all 0.2s;
+}
+
+.sec2_best li:hover .product_price {
+    /* color: #ffff00; */
+}
+
+.plus {
+    display: inline-block;
+    font-weight: 800;
+}
+
+.add_cart:hover {
+    color: #ffff00;
+}
+
+.add_cart:hover .plus {
+    color: #ffff00;
+    transform: rotate(90deg);
+    transition: all 0.5s;
+
+    /* font-weight: 900; */
+    /* border-bottom: 1px solid #ffff00; */
+}
+
+
+
+/* 카테고리 시작 */
+.sec2_category_wrap {
+    width: 1320px;
+    height: 400px;
+    margin: 80px auto 125px;
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+}
+
+
+
+/* 카테고리 - 왼쪽 탭 메뉴 */
+.category_list {
+    width: 250px;
+    height: 335px;
+}
+
+.category_list li {
+    list-style: disc;
+    list-style-position: inside;
+}
+
+.category_list li:first-child {
+    list-style: none;
+}
+
+.category_list li:nth-child(2),
+.category_list li:nth-child(3),
+.category_list li:nth-child(4),
+.category_list li:nth-child(5) {
+    margin-bottom: 5px;
+}
+
+.yellow {
+    color: #aaa;
+}
+
+.category_list li a.active {
+    /* 눌러졌을 때(active) 글자 색 변경 */
+    color: #ffff00;
+    font-weight: 900;
+}
+
+.category_list li.active a:hover,
+.category_list li a.active:hover {
+    color: #ffff00 !important;
+    transition: all 0.3s;
+}
+
+.category_list li.yellow:hover a {
+    /* 글자 호버시 색 변경 */
+    color: #fff;
+    transition: all 0.3s;
+}
+
+.category_list li:hover::marker {
+    /* 호버시 li 점 컬러 변경 */
+    color: #fff;
+    transition: all 0.3s;
+}
+
+.category_list li.active::marker,
+.category_list li.active:hover::marker {
+    /* 눌러졌을 때, 호버 무시(컬러 고정) */
+    color: #ffff00 !important;
+    transition: all 0.3s;
+}
+
+
+
+.category_list h4 {
+    display: inline-block;
+    font-size: 28px;
+    font-weight: 900;
+    margin-bottom: 50px;
+    padding-top: 5px;
+
+}
+
+.category_list a {
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 700;
+    padding: 15px 15px 15px 10px;
+}
+
+/* 카테고리 - 오른쪽 콘텐츠 */
+.category_tab-content {
+    width: 950px;
+    height: 335px;
+}
+
+/* 탭 구조 */
+.tab-pane {
+    display: none;
+}
+
+.tab-pane.active {
+    display: block;
+}
+
+
+
+.category_product ul {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 100px;
+}
+
+.category_product ul li {
+    width: 200px;
+    height: 335px;
+}
+
+.category_img_wrap {
+    width: 200px;
+    height: 200px;
+    background-color: #111;
+
+    position: relative;
+    /* 카테고리 리스트 아이템 위치 기준 */
+}
+
+.category_img_wrap img:hover {
+    transform: scale(1.1);
+    transition: all 0.3s;
+}
+
+.tab1_product {
+    /* tab1_공통) 츄어블 치약 이미지 조절 */
+    position: absolute;
+    top: 0px;
+    left: -50px;
+    width: 150%;
+}
+
+.tab2_product {
+    /* tab2_공통) 오리지널치약 이미지 조절 */
+    position: absolute;
+    top: 20px;
+    left: -12px;
+    width: 105%;
+}
+
+
+.tab3_product {
+    /* tab3_공통) 가글 이미지 조절 */
+    position: absolute;
+    top: 8px;
+    left: -28px;
+    width: 130%;
+}
+
+
+.tab4-1_product {
+    /* 마커펜 이미지 조절 */
+    position: absolute;
+    top: 20px;
+    left: -3px;
+    width: 105%;
+}
+
+.tab4-2_product {
+    /* 머그컵 이미지 조절 */
+    position: absolute;
+    top: 23px;
+    left: -18px;
+    width: 115%;
+}
+
+.tab4-3_product {
+    /* 백팩 이미지 조절 */
+    position: absolute;
+    top: 20px;
+    left: -20px;
+    width: 115%;
+}
+
+.tab4_img {
+    background-color: #2c2c2c;
+}
+
+.tab4-4_product {
+    /* 쇼핑백 이미지 조절 */
+    position: absolute;
+    top: 20px;
+    left: -4px;
+    width: 105%;
+}
+
+.category_text_wrap {
+    color: #fff;
+    margin-top: 25px;
+}
+
+.category_product ul li:hover .product_name {
+    /* color: #ffff00; */
+    /* font-weight: 700; */
+    transition: all 0.2s;
+}
+
+
+/* find your zest */
+#banner_01 {
+    background-image: url(../img/zest_banner_01.jpg);
+}
+
+.banner_01_img {
+    width: 1920px;
+    height: 180px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.banner_01_img img {
+    display: block;
+    text-align: center;
+    width: 100%;
+    /* filter: blur(3px); */
+    box-sizing: border-box;
+}
+
+.banner_01_img img:hover {
+    filter: blur(0px);
+    transition: all 1.2s ease-out;
+}
+
+
+/* section3 */
+#section3 {
+    background-color: #111;
+}
+
+.sec3_wrap {
+    width: 1920px;
+    height: 685px;
+    margin: 0 auto;
+
+    display: flex;
+}
+
+.test_page {
+    width: 1320px;
+    height: 681px;
+    background-color: #111;
+    padding-left: 150px;
+}
+
+.sec3_tab-pane {
+    display: none;
+}
+
+.sec3_tab-pane.active {
+    display: block;
+}
+
+
+/* 테스트 페이지 내부 */
+.test_page_wrap_01 {
+    width: 1320px;
+    /* margin: 0 auto; */
+}
+
+/* 테스트페이지-1 */
+.test_page_01 {
+    text-align: center;
+    padding-top: 120px;
+    color: #fff;
+}
+
+.Q_number {
+    font-weight: 400;
+    font-size: 22px;
+}
+
+.test_Q {
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 1.3em;
+    margin-top: 30px;
+    margin-bottom: 55px;
+    margin-left: 10px;
+}
+
+.test_btn_wrap {
+    width: 550px;
+    margin: 0 auto;
+}
+
+.test_btn_wrap li:hover a {
+    border-color: #fff;
+    background-color: #fff;
+    color: #111;
+    font-weight: 900;
+    transition: all 0.25s;
+}
+
+.test_btn a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+
+    padding: 20px 100px;
+    border: 3px solid #fff;
+    border-radius: 50px;
+
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+    /* 핵심: 채워지는 부분이 박스 밖으로 안 새게 */
+    transition: color 0.4s ease, border-color 0.4s ease;
+    z-index: 1;
+}
+
+/* 내부 텍스트가 위로 유지되도록 */
+.test_btn a span,
+.test_btn a p {
+    position: relative;
+    z-index: 2;
+}
+
+/* ✨ 채워지는 배경 */
+.test_btn a::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -40px;
+    width: 0%;
+    height: 100%;
+
+    background-color: #fff;
+    /* 채워지는 색 */
+    transform: skewX(45deg);
+
+    z-index: 1;
+    transition: all 0.8s ease;
+}
+
+/* ✨ hover 시 하얀색이 스윽~ 차오르게 */
+.test_btn:hover a::before {
+    width: 160%;
+    /* 충분히 채워지도록 */
+}
+
+
+/* hover 시 텍스트 컬러+테두리 보정 */
+.test_btn:hover a {
+    color: #111;
+    border-color: #fff;
+}
+
+/* 버튼A */
+.btn_A a {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.btn_A a span {
+    font-weight: 600;
+    font-size: 28px;
+    padding-top: 13px;
+}
+
+.btn_A a p {
+    font-weight: 500;
+    line-height: 1.4em;
+    font-size: 18px;
+}
+
+/* 버튼 B */
+.btn_B a {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.btn_B a span {
+    font-weight: 600;
+    font-size: 28px;
+    padding-top: 13px;
+}
+
+.btn_B a p {
+    font-weight: 500;
+    line-height: 1.4em;
+    font-size: 18px;
+}
+
+
+/* 테스트페이지-2 */
+.test_page_wrap_02 {
+    width: 1320px;
+    height: 681px;
+    margin: 0 auto;
+    color: #fff;
+    overflow: hidden;
+    position: relative;
+}
+
+.test_page_02 {
+    padding-top: 100px;
+}
+
+.test_page_02_text {
+    text-align: center;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 1.5em;
+    margin-top: 50px;
+    margin-bottom: 65px;
+    /* padding-left: 20px; */
+}
+
+.test_page_02_text strong {
+    font-weight: 900;
+}
+
+.product_all {
+    position: absolute;
+    top: 270px;
+    left: 120px;
+    width: 80%;
+    animation: product-all 30s linear infinite;
+
+    user-select: none;
+    -webkit-user-drag: none;
+}
+
+@keyframes product-all {
+    0% {
+        transform: rotate(-15deg);
+    }
+
+    100% {
+        transform: rotate(-180deg);
+    }
+}
+
+
+/* 테스트페이지-3 */
+.sec3_tab-pane#sec3_tab3.active .test_page_03_img_wrap,
+.sec3_tab-pane#sec3_tab3.active .test_result_name {
+    opacity: 1;
+    visibility: visible;
+}
+
+.test_page_wrap_03 {
+    width: 1320px;
+    height: 681px;
+    margin: 0 auto;
+    color: #fff;
+}
+
+.test_page_03 {
+    position: relative;
+    top: 20px;
+    left: -90px;
+
+    display: flex;
+
+    background: url(../img/find_your_zest_lemon_2.png) right 120px top 60px no-repeat;
+}
+
+.test_result_name {
+    /* display: inline-block; */
+}
+
+.test_page_03_img_wrap,
+.test_result_name {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.6s ease;
+    width: 750px;
+}
+
+
+.test_page_03_img_wrap img {
+    /* width: 32%; */
+}
+
+.test03_img_1 {
+    /* 제스트치약 레몬 */
+    width: 32%;
+    position: absolute;
+    top: 110px;
+    left: 217px;
+    z-index: 8;
+}
+
+.test03_img_2 {
+    /* 제스트가글 레몬 */
+    width: 32%;
+    position: absolute;
+    top: 190px;
+    left: 380px;
+    z-index: 9;
+}
+
+.test03_img_3 {
+    /* 제스트츄어블치약 레몬 */
+    width: 45%;
+    position: absolute;
+    top: 220px;
+    left: 95px;
+    z-index: 10;
+}
+
+.test_page_03_text {
+    padding-top: 150px;
+}
+
+.test_page_03_text_title {
+    margin-bottom: 50px;
+}
+
+.test_page_03_text_title p {
+    font-weight: 500;
+    font-size: 22px;
+    margin-bottom: 25px;
+}
+
+.test_page_03_text_title span {
+    font-weight: 900;
+    font-size: 50px;
+    color: #ffff00;
+}
+
+.lemon {
+    position: relative;
+    top: -300px;
+    rotate: -90deg;
+    opacity: 0.1;
+
+}
+
+.recommend_slogan {
+    font-size: 18px;
+    font-weight: 500;
+    padding-bottom: 20px;
+}
+
+.recommend_text p {
+    font-size: 18px;
+    font-weight: 300;
+    padding-bottom: 20px;
+}
+
+
+.test_page_03_btn {
+    margin-top: 30px;
+}
+
+.test_page_03_btn a {
+    display: inline-block;
+    border: 2px solid #fff;
+    border-radius: 25px;
+    padding: 8px 25px;
+    font-weight: 700;
+}
+
+.test_page_03_btn a:first-child {
+    margin-right: 10px;
+}
+
+.test_page_03_btn a:hover {
+    border-color: #ffff00;
+    background-color: #ffff00;
+    color: #111;
+    transition: all 0.25s;
+}
+
+
+
+/* 탭 리스트 */
+.test_text {
+    width: 245px;
+    height: 215px;
+    margin-left: 20px;
+}
+
+.test_list {
+    color: #aaa;
+    font-weight: 700;
+    margin: 208px 0;
+    padding: 25px 0 25px 25px;
+    box-sizing: border-box;
+    list-style: disc;
+    list-style-position: inside;
+}
+
+.test_list li:first-child {
+    list-style: none;
+    color: #fff;
+}
+
+.test_list li.active {
+    /* 눌러졌을 때(active) 글자 색 변경 */
+    color: #ffff00 !important;
+    font-weight: 900;
+    transition: all 0.3s;
+}
+
+.test_list li.active::marker {
+    /* 눌러졌을 때(active) 점 색 변경 */
+    color: #ffff00 !important;
+    transition: all 0.3s;
+}
+
+.test_list li:hover {
+    /* 글자 호버시 색 변경 */
+    color: #fff;
+    transition: all 0.3;
+}
+
+.test_list li.active:hover {
+    /* 눌러졌을 때, 호버 무시(컬러 고정) */
+    color: #ffff00 !important;
+    transition: all 0.3s;
+}
+
+/* marker도 hover 무시하고 고정 */
+.test_list li.active:hover::marker {
+    color: #ffff00 !important;
+    transition: all 0.3s;
+}
+
+/* 불릿은 항상 li 색 따라감 */
+.test_list li::marker {
+    color: currentColor;
+}
+
+.test_list h4 {
+    font-size: 26px;
+    margin-bottom: 50px;
+    font-weight: 900;
+}
+
+
+.test_list li a {
+    display: inline-block;
+    font-size: 18px;
+    margin-bottom: 5px;
+    padding: 15px 15px;
+
+    /* 링크는 li 색을 상속 */
+    color: inherit;
+    transition: color 0.3s;
+}
+
+/* a:hover도 li의 색 고정 */
+.test_list li a:hover {
+    color: inherit !important;
+}
+
+
+
+/* section4 */
+#section4 {
+    background-color: #222;
+}
+
+.sec4_wrap {
+    width: 1320px;
+    height: 1820px;
+    margin: 0 auto;
+}
+
+.sec4_updates {
+    width: 1320px;
+    height: 1035px;
+}
+
+.sec4_title {
+    padding-top: 100px;
+    padding-bottom: 80px;
+    display: block;
+}
+
+.updates_img_wrap {
+    width: 1320px;
+    display: flex;
+}
+
+.updates_img_wrap1 img {
+    opacity: 0.7;
+}
+
+.updates_img_wrap1 img:hover {
+    opacity: 1;
+    transition: all 0.2s;
+}
+
+
+.updates_img_wrap2 ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.updates_img_wrap2 ul li:nth-child(1) {
+    padding: 0 15px 15px 20px;
+}
+
+.updates_img_wrap2 ul li:nth-child(3) {
+    padding: 0 15px 0 20px;
+}
+
+
+.updates_img_wrap2 ul li {
+    opacity: 0.8;
+}
+
+.updates_img_wrap2 ul li:hover {
+    opacity: 1;
+    transition: all 0.2s;
+}
+
+.updates_btn {
+    width: 425px;
+    margin: 80px auto 100px;
+}
+
+.updates_btn a {
+    display: block;
+    padding: 20px 150px;
+    border: 3px solid #fff;
+    border-radius: 50px;
+    color: #fff;
+
+    font-size: 20px;
+    font-weight: 900;
+    text-align: center;
+}
+
+.updates_btn a:hover {
+    color: #ffff00;
+    border: 3px solid #ffff00;
+    transition: all 0.2s;
+}
+
+.sns_text {
+    color: #fff;
+    display: flex;
+}
+
+.sns_title {
+    font-size: 52px;
+    font-weight: 700;
+}
+
+.sns_slogan {
+    font-size: 20px;
+    display: block;
+    padding-left: 40px;
+    margin-bottom: 65px;
+}
+
+.sns_img_wrap {
+    width: 1320px;
+    height: 300px;
+    position: relative;
+    margin: 0 auto;
+    overflow: visible;
+}
+
+.sns_img_wrap .btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    font-size: 30px;
+    color: #fff;
+    cursor: pointer;
+    z-index: 100;
+}
+
+.sns_img_wrap .prev {
+    left: -90px;
+}
+
+.sns_img_wrap .next {
+    right: -90px;
+}
+
+.sns_viewport {
+    width: 1320px;
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+}
+
+.sns_img {
+    display: flex;
+    gap: 40px;
+    transition: transform 0.5s ease;
+
+}
+
+.sns_img li {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    flex: 0 0 300px;
+    overflow: hidden;
+}
+
+.sns_img li a {
+    position: relative;
+    display: block;
+    overflow: hidden;
+
+}
+
+.sns_img li:hover a img {}
+
+.sns_img li:hover .sns_hover_icon {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.sns_img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: filter 0.3s ease;
+}
+
+.box1 {
+    /* 백드롭 필터 영역 */
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.box1:hover {
+    backdrop-filter: blur(5px);
+    transition: all 0.3s;
+}
+
+
+.sns_hover_icon {
+    position: absolute;
+    top: 50%;
+    left: 47%;
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+    z-index: 10;
+}
+
+.sns_hover_icon img {
+    width: 110%;
+    opacity: 0.9;
+}
+
+
+
+/* section5 */
+
+#section5 {
+    background-color: #ffff00;
+}
+
+.sec5_wrap {
+    width: 1920px;
+    margin: 0 auto;
+}
+
+.sec5_wrap:hover a {
+    opacity: 1;
+    filter: blur(0px);
+    transition: all 0.4s ease-out;
+}
+
+.sec5_wrap a {
+    opacity: 0.1;
+    filter: blur(5px);
+}
+
+.sec5_wrap img {
+    width: 100%;
+}
+
+
+
+
+
+/* footer */
+#footer {
+    background-color: #222;
+    color: #fff;
+}
+
+#footer p {
+    font-size: 12px;
+}
+
+.footer_wrap {
+    width: 1320px;
+    height: 450px;
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.company_info {
+    display: flex;
+    font-size: 16px;
+    font-weight: 900;
+}
+
+.info_01 {
+    margin-right: 40px;
+}
+
+.info_01 li,
+.info_02 li {
+    margin-bottom: 10px;
+}
+
+.info_01 li a,
+.info_02 li a {
+    padding: 5px 10px;
+    box-sizing: border-box;
+}
+
+.info_01 li a,
+.info_02 li a {
+    display: inline-block;
+    border: 3px solid transparent;
+    border-radius: 25px;
+    box-sizing: border-box;
+}
+
+.info_01 li a:hover,
+.info_02 li a:hover {
+    border-color: #fff;
+    /* 호버 시 색만 변경 */
+    transition: all 0.3s;
+}
+
+.footer_left {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.footer_left h4 {
+    font-size: 20px;
+    font-weight: 900;
+    margin-bottom: 45px;
+    margin-left: 5px;
+}
+
+.footer_left p {
+    margin-top: 30px;
+    margin-left: 20px;
+}
+
+.footer_right {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    text-align: right;
+}
+
+.sns_icon {
+    display: flex;
+    justify-content: right;
+    gap: 5px;
+    margin-bottom: 30px;
+}
+
+.sns_icon li {
+    width: 50px;
+    height: 50px;
+}
+
+.sns_icon li a:hover {
+    opacity: 1;
+    transition: all 0.3s;
+}
+
+.sns_icon li a {
+    opacity: 0.6;
+}
+
+.sns_icon img {
+    width: 100%;
+}
+
+.footer_right p {
+    margin-bottom: 40px;
+}

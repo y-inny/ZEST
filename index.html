@@ -1,0 +1,1460 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1360">
+    <title>zest</title>
+
+
+    <!-- 웹폰트 연결 -->
+    <!-- font-family: 'SUIT Variable', sans-serif; -->
+    <link href="https://cdn.jsdelivr.net/gh/sun-typeface/SUIT@2/fonts/variable/woff2/SUIT-Variable.css"
+        rel="stylesheet">
+
+    <!-- AOS 연결 (특징: transform과 함께 사용할 수 없음! ) -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- 외부 css 연결 -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- 파비콘 연결 -->
+    <link rel="shortcut icon" href="img/zest_favicon_03.png" type="image/x-icon">
+
+</head>
+
+<body>
+
+    <div id="header">
+        <div class="inner_header">
+
+            <h1 class="logo">
+                <a href="index.html"><img src="img/logo_zest_w.png" alt="zest_logo"></a>
+            </h1> <!-- .logo -->
+
+            <div class="gnb_wrap">
+                <ul class="gnb">
+                    <li><a href="#section1">About</a></li>
+                    <li><a href="#section2">Products</a></li>
+                    <li><a href="#section3">Find your ZEST</a></li>
+                    <li><a href="#section4">Updates</a></li>
+                </ul> <!-- .gnb -->
+
+                <span class="gnb_bar"></span>
+
+            </div> <!-- .gnb_wrap -->
+
+            <!-- <ul class="util">
+                <li><a href="#"><img src="img/util_icon_01.png" alt="돋보기"></a></li>
+                <li><a href="#"><img src="img/util_icon_02.png" alt="마이페이지"></a></li>
+                <li><a href="#"><img src="img/util_icon_03.png" alt="쇼핑카트"></a></li>
+            </ul> .util -->
+
+            <ul class="util">
+                <li><a href="#" class="icon icon-search"></a></li>
+                <li><a href="#" class="icon icon-mypage"></a></li>
+                <li><a href="#" class="icon icon-cart"></a></li>
+            </ul>
+
+            <p class="btn_1">
+                <a href="#">
+                    <img class="btn_1_icon" src="img/btn_1_icon.png" alt="최근 제품 아이콘">
+                    <img src="img/btn_1_bg.png" alt="최근에 본 제품 bg">
+                </a>
+            </p> <!-- .btn_1 -->
+
+            <p class="btn_2">
+                <a href="index.html">
+                    <img class="btn_2_icon" src="img/btn_2_icon.png" alt="top_btn_icon">
+                    <img src="img/btn_2_bg.png" alt="top_btn bg">
+                </a>
+            </p> <!-- .btn_2 -->
+
+
+        </div> <!-- .inner_header -->
+    </div> <!-- #header -->
+
+
+    <div id="visual">
+
+        <div class="visual_wrap">
+
+            <div class="visual_bg bg1"></div>
+            <div class="visual_bg bg2"></div>
+            <div class="visual_bg bg3"></div>
+            <div class="visual_bg bg4"></div>
+            <!-- background로 이미지? or 이미지 흘러가는거 js/jQ 소스 쓰기 -->
+
+
+            <div class="visual_text" data-aos="fade-right" data-aos-duration="1500">
+                <h2 class="visual_title">
+                    Start Sweet
+                    <br>End Fresh
+                </h2>
+
+                <p class="visual_slogan">시작은 달콤하게, 끝은 상쾌하게</p>
+
+                <p class="visual_btn">
+                    <a href="#section2">Shop Now</a>
+                </p> <!-- visual_btn -->
+
+            </div> <!-- .visual_text -->
+
+            <div class="visual_indicator">
+                <span data-index="0"></span>
+                <span data-index="1"></span>
+                <span data-index="2"></span>
+                <span data-index="3"></span>
+            </div>
+
+        </div> <!-- .visual_wrap -->
+    </div> <!-- #visual -->
+
+
+    <div id="section1">
+        <!-- 배경색 -->
+
+        <div class="sec1_wrap">
+            <!-- 배경 레몬 이미지 -->
+
+            <div class="section1_slogan">
+                <!-- 노란색텍스트 -->
+                <p class="gradient-text">Zest is a splash of joy. </p>
+            </div> <!-- section1_slogan -->
+
+            <h3 class="section_title sec1">
+                About
+            </h3>
+
+            <ul class="sec1_text">
+                <li data-aos="zoom-in"> <!-- 1 -->
+                    <span class="sec1_text_title">
+                        취향에 맞게 즐기는 스윗 테이스티
+                    </span>
+
+                    <p>
+                        여러가지 다양한 플레이버로 골라쓰는 즐거움
+                    </p>
+                </li> <!-- /1 -->
+
+                <li data-aos="zoom-in"> <!-- 2 -->
+                    <span class="sec1_text_title">
+                        연마제, 계면활성제 초극소량 함유
+                    </span>
+
+                    <p>
+                        치아의 자연코팅제인 법랑질을 깎아내는 연마제,
+                        <br>거품을 발생시키는 계면활성제로부터 치아 건강을 지킵니다.
+                    </p>
+                </li> <!-- /2 -->
+
+                <li data-aos="zoom-in"> <!-- 3 -->
+                    <span class="sec1_text_title">
+                        천연유래성분 민트와 자일리톨 함유
+                    </span>
+
+                    <p>
+                        신선한 과일과 블렌딩한 민트로 충치예방,
+                        <br>구취제거에 도움을 주는 천연감미제 자일리톨 함유
+                    </p>
+                </li> <!-- /3 -->
+
+            </ul> <!-- #sec1_text -->
+
+        </div> <!-- .sec1_wrap -->
+
+    </div> <!-- #section1 -->
+
+
+
+    <div id="section2">
+
+        <div class="sec2_wrap">
+
+            <h3 class="section_title">
+                Loved By you
+            </h3>
+
+            <!-- 베스트아이템 영역 -->
+            <ul class="sec2_best">
+
+                <li data-aos="fade-up" data-aos-duration="400"> <!-- 1 -->
+                    <a href="#"> <!-- 이미지 선택하기 -->
+                        <div class="sec2_best_img_wrap">
+
+                            <h4 class="best_number">1</h4>
+
+                            <img class="best_img1" src="./img/product_chewable_toothpaste_lime.png"
+                                alt="베스트아이템1_츄어블치약_라임">
+                        </div> <!-- .sec2_best_img_wrap -->
+                    </a>
+
+                    <a href="#"> <!-- 텍스트 풀 선택 -->
+                        <div class="sec2_best_text_wrap">
+                            <p class="product_name">
+                                제스트 츄어블 치약 (라임)
+                            </p> <!-- .product_name -->
+
+                            <div class="price_wrap">
+                                <p class="product_price">
+                                    &#8361; 14,200
+                                </p> <!-- .sec2_best_price -->
+
+                                <p class="product_price_origin">
+                                    &#8361; 18,000
+                                </p> <!-- product_price_origin -->
+                            </div> <!-- .price_wrap -->
+                        </div> <!-- .sec2_best_text_wrap -->
+                    </a>
+
+                    <a href="#"> <!-- 카트에 상품 추가하기 -->
+                        <p class="add_cart">
+                            Add to Cart <span class="plus">+</span>
+                        </p> <!-- .add_cart -->
+                    </a>
+                </li> <!-- 1 -->
+
+
+
+                <li data-aos="fade-up" data-aos-duration="800"> <!-- 2 -->
+                    <a href="#"> <!-- 이미지 선택하기 -->
+                        <div class="sec2_best_img_wrap">
+
+                            <h4 class="best_number">2</h4>
+
+                            <img class="best_img2" src="./img/product_toothpaste_lemon.png" alt="베스트아이템2_치약_레몬">
+                        </div> <!-- .sec2_best_img_wrap -->
+                    </a>
+
+                    <a href="#"> <!-- 텍스트 풀 선택 -->
+                        <div class="sec2_best_text_wrap">
+                            <p class="product_name">
+                                제스트 오리지널 치약 (레몬)
+                            </p> <!-- .product_name -->
+
+                            <div class="price_wrap">
+                                <p class="product_price">
+                                    &#8361; 18,200
+                                </p> <!-- .sec2_best_price -->
+
+                                <p class="product_price_origin">
+                                    &#8361; 22,000
+                                </p> <!-- product_price_origin -->
+                            </div> <!-- .price_wrap -->
+                        </div> <!-- .sec2_best_text_wrap -->
+                    </a>
+
+                    <a href="#"> <!-- 카트에 상품 추가하기 -->
+                        <p class="add_cart">
+                            Add to Cart <span class="plus">+</span>
+                        </p> <!-- .add_cart -->
+                    </a>
+                </li> <!-- 2 -->
+
+
+                <li data-aos="fade-up" data-aos-duration="1200"> <!-- 3 -->
+                    <a href="#"> <!-- 이미지 선택하기 -->
+                        <div class="sec2_best_img_wrap">
+
+                            <h4 class="best_number">3</h4>
+
+                            <img class="best_img3" src="./img/product_gargle_blueberry.png" alt="베스트아이템3_가글_블루베리">
+                        </div> <!-- .sec2_best_img_wrap -->
+                    </a>
+
+                    <a href="#"> <!-- 텍스트 풀 선택 -->
+                        <div class="sec2_best_text_wrap">
+                            <p class="product_name">
+                                제스트 가글 (블루베리)
+                            </p> <!-- .product_name -->
+
+                            <div class="price_wrap">
+                                <p class="product_price">
+                                    &#8361; 21,200
+                                </p> <!-- .sec2_best_price -->
+
+                                <p class="product_price_origin">
+                                    &#8361; 25,000
+                                </p> <!-- product_price_origin -->
+                            </div> <!-- .price_wrap -->
+                        </div> <!-- .sec2_best_text_wrap -->
+                    </a>
+
+                    <a href="#"> <!-- 카트에 상품 추가하기 -->
+                        <p class="add_cart">
+                            Add to Cart <span class="plus">+</span>
+                        </p> <!-- .add_cart -->
+                    </a>
+                </li> <!-- 3 -->
+
+
+                <li data-aos="fade-up" data-aos-duration="1600"> <!-- 4 -->
+                    <a href="#"> <!-- 이미지 선택하기 -->
+                        <div class="sec2_best_img_wrap">
+
+                            <h4 class="best_number">4</h4>
+
+                            <img class="best_img1" src="./img/product_chewable_toothpaste_lemon.png"
+                                alt="베스트아이템4_츄어블치약_레몬">
+                        </div> <!-- .sec2_best_img_wrap -->
+                    </a>
+
+                    <a href="#"> <!-- 텍스트 풀 선택 -->
+                        <div class="sec2_best_text_wrap">
+                            <p class="product_name">
+                                제스트 츄어블 치약 (레몬)
+                            </p> <!-- .product_name -->
+
+                            <div class="price_wrap">
+                                <p class="product_price">
+                                    &#8361; 14,200
+                                </p> <!-- .sec2_best_price -->
+
+                                <p class="product_price_origin">
+                                    &#8361; 18,000
+                                </p> <!-- product_price_origin -->
+                            </div> <!-- .price_wrap -->
+                        </div> <!-- .sec2_best_text_wrap -->
+                    </a>
+
+                    <a href="#"> <!-- 카트에 상품 추가하기 -->
+                        <p class="add_cart">
+                            Add to Cart <span class="plus">+</span>
+                        </p> <!-- .add_cart -->
+                    </a>
+                </li> <!-- 4 -->
+
+
+                <li data-aos="fade-up" data-aos-duration="2000"> <!-- 5 -->
+                    <a href="#"> <!-- 이미지 선택하기 -->
+                        <div class="sec2_best_img_wrap">
+
+                            <h4 class="best_number">5</h4>
+
+                            <img class="best_img4" src="./img/product_backpack.png" alt="베스트아이템5_백팩">
+                        </div> <!-- .sec2_best_img_wrap -->
+                    </a>
+
+                    <a href="#"> <!-- 텍스트 풀 선택 -->
+                        <div class="sec2_best_text_wrap">
+                            <p class="product_name">
+                                제스트 짐색 스트링 백팩
+                            </p> <!-- .product_name -->
+
+                            <div class="price_wrap">
+                                <p class="product_price">
+                                    &#8361; 22,000
+                                </p> <!-- .sec2_best_price -->
+
+                                <p class="product_price_origin">
+                                    &#8361; 29,900
+                                </p> <!-- product_price_origin -->
+                            </div> <!-- .price_wrap -->
+                        </div> <!-- .sec2_best_text_wrap -->
+                    </a>
+
+                    <a href="#"> <!-- 카트에 상품 추가하기 -->
+                        <p class="add_cart">
+                            Add to Cart <span class="plus">+</span>
+                        </p> <!-- .add_cart -->
+                    </a>
+                </li> <!-- 5 -->
+
+            </ul> <!-- .sec2_best -->
+
+
+
+            <!-- 카테고리 영역 : 55_tab 참고 -->
+            <div class="sec2_category_wrap">
+
+                <!-- 왼쪽 탭 메뉴 250*335 (오른쪽 리스트 사이 여백 120) -->
+                <ul class="category_list">
+                    <li> <!-- 제목 -->
+                        <h4>Shop by Category</h4>
+                    </li>
+
+                    <li class="yellow active"> <!-- list-1 -->
+                        <!-- <button type="button" class="active" data-target="tab1"> 참고사이트:milk / 클릭하면 액티브 클래스 선택된 li로 옮겨다님-->
+                        <a href="#" class="active" data-target="tab1">
+                            Chewing Tooth Paste
+                        </a>
+                    </li>
+
+                    <li class="yellow"> <!-- list-2 -->
+                        <a href="#" data-target="tab2">
+                            Tooth Paste
+                        </a>
+                    </li>
+
+                    <li class="yellow"> <!-- list-3 -->
+                        <a href="#" data-target="tab3">
+                            Gargle
+                        </a>
+                    </li>
+
+                    <li class="yellow"> <!-- list-4 -->
+                        <a href="#" data-target="tab4">
+                            Life
+                        </a>
+                    </li>
+                </ul> <!-- .category_list -->
+
+
+
+                <!-- 오른쪽 콘텐츠 950*335 -->
+                <div class="category_tab-content">
+
+                    <!-- 탭1 -->
+                    <div id="tab1" class="tab-pane active">
+                        <!-- 활성화되면 클래스 active 추가됨 -->
+
+                        <div class="category_product">
+
+                            <ul> <!-- tab1 제품 리스트-->
+                                <li> <!-- 제품1 -->
+                                    <div class="category_img_wrap">
+                                        <a href="#">
+                                            <img class="tab1_product" src="img/product_chewable_toothpaste_lemon.png"
+                                                alt="1-1_츄어블치약_레몬">
+                                        </a>
+                                    </div> <!-- .category_img_wrap -->
+
+                                    <div class="category_text_wrap">
+                                        <a href="#"> <!-- 텍스트 풀 선택 -->
+                                            <div class="sec2_best_text_wrap">
+                                                <p class="product_name">
+                                                    제스트 츄어블 치약 (레몬)
+                                                </p> <!-- .product_name -->
+
+                                                <div class="price_wrap">
+                                                    <p class="product_price">
+                                                        &#8361; 14,200
+                                                    </p> <!-- .sec2_best_price -->
+
+                                                    <p class="product_price_origin">
+                                                        &#8361; 18,000
+                                                    </p> <!-- product_price_origin -->
+                                                </div> <!-- .price_wrap -->
+                                            </div> <!-- .sec2_best_text_wrap -->
+                                        </a>
+
+                                        <a href="#"> <!-- 카트에 상품 추가하기 -->
+                                            <p class="add_cart">
+                                                Add to Cart <span class="plus">+</span>
+                                            </p> <!-- .add_cart -->
+                                        </a>
+                                    </div> <!-- .category_text_wrap -->
+                                </li> <!-- 제품1 -->
+
+                                <li> <!-- 제품2 -->
+                                    <div class="category_img_wrap">
+                                        <a href="#">
+                                            <img class="tab1_product" src="img/product_chewable_toothpaste_lime.png"
+                                                alt="1-2_츄어블치약_라임">
+                                        </a>
+                                    </div> <!-- .category_img_wrap -->
+
+                                    <div class="category_text_wrap">
+                                        <a href="#"> <!-- 텍스트 풀 선택 -->
+                                            <div class="sec2_best_text_wrap">
+                                                <p class="product_name">
+                                                    제스트 츄어블 치약 (라임)
+                                                </p> <!-- .product_name -->
+
+                                                <div class="price_wrap">
+                                                    <p class="product_price">
+                                                        &#8361; 14,200
+                                                    </p> <!-- .sec2_best_price -->
+
+                                                    <p class="product_price_origin">
+                                                        &#8361; 18,000
+                                                    </p> <!-- product_price_origin -->
+                                                </div> <!-- .price_wrap -->
+                                            </div> <!-- .sec2_best_text_wrap -->
+                                        </a>
+
+                                        <a href="#"> <!-- 카트에 상품 추가하기 -->
+                                            <p class="add_cart">
+                                                Add to Cart <span class="plus">+</span>
+                                            </p> <!-- .add_cart -->
+                                        </a>
+                                    </div> <!-- .category_text_wrap -->
+                                </li> <!-- 제품2 -->
+
+                                <li> <!-- 제품3 -->
+                                    <div class="category_img_wrap">
+                                        <a href="#">
+                                            <img class="tab1_product" src="img/product_chewable_toothpaste_orange.png"
+                                                alt="1-3_츄어블치약_오렌지">
+                                        </a>
+                                    </div> <!-- .category_img_wrap -->
+
+                                    <div class="category_text_wrap">
+                                        <a href="#"> <!-- 텍스트 풀 선택 -->
+                                            <div class="sec2_best_text_wrap">
+                                                <p class="product_name">
+                                                    제스트 츄어블 치약 (오렌지)
+                                                </p> <!-- .product_name -->
+
+                                                <div class="price_wrap">
+                                                    <p class="product_price">
+                                                        &#8361; 14,200
+                                                    </p> <!-- .sec2_best_price -->
+
+                                                    <p class="product_price_origin">
+                                                        &#8361; 18,000
+                                                    </p> <!-- product_price_origin -->
+                                                </div> <!-- .price_wrap -->
+                                            </div> <!-- .sec2_best_text_wrap -->
+                                        </a>
+
+                                        <a href="#"> <!-- 카트에 상품 추가하기 -->
+                                            <p class="add_cart">
+                                                Add to Cart <span class="plus">+</span>
+                                            </p> <!-- .add_cart -->
+                                        </a>
+                                    </div> <!-- .category_text_wrap -->
+                                </li> <!-- 제품3 -->
+
+                                <li> <!-- 제품4 -->
+                                    <div class="category_img_wrap">
+                                        <a href="#">
+                                            <img class="tab1_product"
+                                                src="img/product_chewable_toothpaste_grapefruit.png" alt="1-4_츄어블치약_자몽">
+                                        </a>
+                                    </div> <!-- .category_img_wrap -->
+
+                                    <div class="category_text_wrap">
+                                        <a href="#"> <!-- 텍스트 풀 선택 -->
+                                            <div class="sec2_best_text_wrap">
+                                                <p class="product_name">
+                                                    제스트 츄어블 치약 (자몽)
+                                                </p> <!-- .product_name -->
+
+                                                <div class="price_wrap">
+                                                    <p class="product_price">
+                                                        &#8361; 14,200
+                                                    </p> <!-- .sec2_best_price -->
+
+                                                    <p class="product_price_origin">
+                                                        &#8361; 18,000
+                                                    </p> <!-- product_price_origin -->
+                                                </div> <!-- .price_wrap -->
+                                            </div> <!-- .sec2_best_text_wrap -->
+                                        </a>
+
+                                        <a href="#"> <!-- 카트에 상품 추가하기 -->
+                                            <p class="add_cart">
+                                                Add to Cart <span class="plus">+</span>
+                                            </p> <!-- .add_cart -->
+                                        </a>
+                                    </div> <!-- .category_text_wrap -->
+                                </li> <!-- 제품4 -->
+                            </ul> <!-- tab1 제품 리스트-->
+
+                        </div> <!-- .category_product -->
+
+                    </div> <!-- #tab1 .tab-pane .active -->
+
+
+
+
+                    <!-- 탭2 -->
+                    <div id="tab2" class="tab-pane">
+                        <!-- 활성화되면 클래스 active 추가됨 -->
+
+                        <div class="category_product">
+
+                            <ul> <!-- tab2 제품 리스트-->
+                                <li> <!-- 제품1 -->
+                                    <div class="category_img_wrap">
+                                        <a href="#">
+                                            <img class="tab2_product" src="img/product_toothpaste_lemon.png"
+                                                alt="2-1_오리지널치약_레몬">
+                                        </a>
+                                    </div> <!-- .category_img_wrap -->
+
+                                    <div class="category_text_wrap">
+                                        <a href="#"> <!-- 텍스트 풀 선택 -->
+                                            <div class="sec2_best_text_wrap">
+                                                <p class="product_name">
+                                                    제스트 오리지널 치약 (레몬)
+                                                </p> <!-- .product_name -->
+
+                                                <div class="price_wrap">
+                                                    <p class="product_price">
+                                                        &#8361; 18,200
+                                                    </p> <!-- .sec2_best_price -->
+
+                                                    <p class="product_price_origin">
+                                                        &#8361; 22,000
+                                                    </p> <!-- product_price_origin -->
+                                                </div> <!-- .price_wrap -->
+                                            </div> <!-- .sec2_best_text_wrap -->
+                                        </a>
+
+                                        <a href="#"> <!-- 카트에 상품 추가하기 -->
+                                            <p class="add_cart">
+                                                Add to Cart <span class="plus">+</span>
+                                            </p> <!-- .add_cart -->
+                                        </a>
+                                    </div> <!-- .category_text_wrap -->
+                                </li> <!-- 제품1 -->
+
+                                <li> <!-- 제품2 -->
+                                    <div class="category_img_wrap">
+                                        <a href="#">
+                                            <img class="tab2_product" src="img/product_toothpaste_lime.png"
+                                                alt="2-2_오리지널치약_라임">
+                                        </a>
+                                    </div> <!-- .category_img_wrap -->
+
+                                    <div class="category_text_wrap">
+                                        <a href="#"> <!-- 텍스트 풀 선택 -->
+                                            <div class="sec2_best_text_wrap">
+                                                <p class="product_name">
+                                                    제스트 오리지널 치약 (라임)
+                                                </p> <!-- .product_name -->
+
+                                                <div class="price_wrap">
+                                                    <p class="product_price">
+                                                        &#8361; 18,200
+                                                    </p> <!-- .sec2_best_price -->
+
+                                                    <p class="product_price_origin">
+                                                        &#8361; 22,000
+                                                    </p> <!-- product_price_origin -->
+                                                </div> <!-- .price_wrap -->
+                                            </div> <!-- .sec2_best_text_wrap -->
+                                        </a>
+
+                                        <a href="#"> <!-- 카트에 상품 추가하기 -->
+                                            <p class="add_cart">
+                                                Add to Cart <span class="plus">+</span>
+                                            </p> <!-- .add_cart -->
+                                        </a>
+                                    </div> <!-- .category_text_wrap -->
+                                </li> <!-- 제품2 -->
+
+                                <li> <!-- 제품3 -->
+                                    <div class="category_img_wrap">
+                                        <a href="#">
+                                            <img class="tab2_product" src="img/product_toothpaste_orange.png"
+                                                alt="2-3_오리지널치약_오렌지">
+                                        </a>
+                                    </div> <!-- .category_img_wrap -->
+
+                                    <div class="category_text_wrap">
+                                        <a href="#"> <!-- 텍스트 풀 선택 -->
+                                            <div class="sec2_best_text_wrap">
+                                                <p class="product_name">
+                                                    제스트 오리지널 치약 (오렌지)
+                                                </p> <!-- .product_name -->
+
+                                                <div class="price_wrap">
+                                                    <p class="product_price">
+                                                        &#8361; 18,200
+                                                    </p> <!-- .sec2_best_price -->
+
+                                                    <p class="product_price_origin">
+                                                        &#8361; 22,000
+                                                    </p> <!-- product_price_origin -->
+                                                </div> <!-- .price_wrap -->
+                                            </div> <!-- .sec2_best_text_wrap -->
+                                        </a>
+
+                                        <a href="#"> <!-- 카트에 상품 추가하기 -->
+                                            <p class="add_cart">
+                                                Add to Cart <span class="plus">+</span>
+                                            </p> <!-- .add_cart -->
+                                        </a>
+                                    </div> <!-- .category_text_wrap -->
+                                </li> <!-- 제품3 -->
+
+                                <li> <!-- 제품4 -->
+                                    <div class="category_img_wrap">
+                                        <a href="#">
+                                            <img class="tab2_product" src="img/product_toothpaste_grapefruit.png"
+                                                alt="2-4_오리지널치약_자몽">
+                                        </a>
+                                    </div> <!-- .category_img_wrap -->
+
+                                    <div class="category_text_wrap">
+                                        <a href="#"> <!-- 텍스트 풀 선택 -->
+                                            <div class="sec2_best_text_wrap">
+                                                <p class="product_name">
+                                                    제스트 오리지널 치약 (자몽)
+                                                </p> <!-- .product_name -->
+
+                                                <div class="price_wrap">
+                                                    <p class="product_price">
+                                                        &#8361; 18,200
+                                                    </p> <!-- .sec2_best_price -->
+
+                                                    <p class="product_price_origin">
+                                                        &#8361; 22,000
+                                                    </p> <!-- product_price_origin -->
+                                                </div> <!-- .price_wrap -->
+                                            </div> <!-- .sec2_best_text_wrap -->
+                                        </a>
+
+                                        <a href="#"> <!-- 카트에 상품 추가하기 -->
+                                            <p class="add_cart">
+                                                Add to Cart <span class="plus">+</span>
+                                            </p> <!-- .add_cart -->
+                                        </a>
+                                    </div> <!-- .category_text_wrap -->
+                                </li> <!-- 제품4 -->
+                            </ul> <!-- tab2 제품 리스트-->
+
+                        </div> <!-- .category_product -->
+                    </div> <!-- #tab2 .tab-pane -->
+
+
+
+                    <!-- 탭3 -->
+                    <div id="tab3" class="tab-pane">
+                        <!-- 활성화되면 클래스 active 추가됨 -->
+
+                        <div class="category_product">
+
+                            <ul> <!-- tab3 제품 리스트-->
+                                <li> <!-- 제품1 -->
+                                    <div class="category_img_wrap">
+                                        <a href="#">
+                                            <img class="tab3_product" src="img/product_gargle_lemon.png"
+                                                alt="3-1_제스트가글_레몬">
+                                        </a>
+                                    </div> <!-- .category_img_wrap -->
+
+                                    <div class="category_text_wrap">
+                                        <a href="#"> <!-- 텍스트 풀 선택 -->
+                                            <div class="sec2_best_text_wrap">
+                                                <p class="product_name">
+                                                    제스트 가글 (레몬)
+                                                </p> <!-- .product_name -->
+
+                                                <div class="price_wrap">
+                                                    <p class="product_price">
+                                                        &#8361; 21,200
+                                                    </p> <!-- .sec2_best_price -->
+
+                                                    <p class="product_price_origin">
+                                                        &#8361; 25,000
+                                                    </p> <!-- product_price_origin -->
+                                                </div> <!-- .price_wrap -->
+                                            </div> <!-- .sec2_best_text_wrap -->
+                                        </a>
+
+                                        <a href="#"> <!-- 카트에 상품 추가하기 -->
+                                            <p class="add_cart">
+                                                Add to Cart <span class="plus">+</span>
+                                            </p> <!-- .add_cart -->
+                                        </a>
+                                    </div> <!-- .category_text_wrap -->
+                                </li> <!-- 제품1 -->
+
+                                <li> <!-- 제품2 -->
+                                    <div class="category_img_wrap">
+                                        <a href="#">
+                                            <img class="tab3_product" src="img/product_gargle_lime.png"
+                                                alt="3-2_제스트가글_라임">
+                                        </a>
+                                    </div> <!-- .category_img_wrap -->
+
+                                    <div class="category_text_wrap">
+                                        <a href="#"> <!-- 텍스트 풀 선택 -->
+                                            <div class="sec2_best_text_wrap">
+                                                <p class="product_name">
+                                                    제스트 가글 (라임)
+                                                </p> <!-- .product_name -->
+
+                                                <div class="price_wrap">
+                                                    <p class="product_price">
+                                                        &#8361; 21,200
+                                                    </p> <!-- .sec2_best_price -->
+
+                                                    <p class="product_price_origin">
+                                                        &#8361; 25,000
+                                                    </p> <!-- product_price_origin -->
+                                                </div> <!-- .price_wrap -->
+                                            </div> <!-- .sec2_best_text_wrap -->
+                                        </a>
+
+                                        <a href="#"> <!-- 카트에 상품 추가하기 -->
+                                            <p class="add_cart">
+                                                Add to Cart <span class="plus">+</span>
+                                            </p> <!-- .add_cart -->
+                                        </a>
+                                    </div> <!-- .category_text_wrap -->
+                                </li> <!-- 제품2 -->
+
+                                <li> <!-- 제품3 -->
+                                    <div class="category_img_wrap">
+                                        <a href="#">
+                                            <img class="tab3_product" src="img/product_gargle_blueberry.png"
+                                                alt="3-3_제스트가글_블루베리">
+                                        </a>
+                                    </div> <!-- .category_img_wrap -->
+
+                                    <div class="category_text_wrap">
+                                        <a href="#"> <!-- 텍스트 풀 선택 -->
+                                            <div class="sec2_best_text_wrap">
+                                                <p class="product_name">
+                                                    제스트 가글 (블루베리)
+                                                </p> <!-- .product_name -->
+
+                                                <div class="price_wrap">
+                                                    <p class="product_price">
+                                                        &#8361; 21,200
+                                                    </p> <!-- .sec2_best_price -->
+
+                                                    <p class="product_price_origin">
+                                                        &#8361; 25,000
+                                                    </p> <!-- product_price_origin -->
+                                                </div> <!-- .price_wrap -->
+                                            </div> <!-- .sec2_best_text_wrap -->
+                                        </a>
+
+                                        <a href="#"> <!-- 카트에 상품 추가하기 -->
+                                            <p class="add_cart">
+                                                Add to Cart <span class="plus">+</span>
+                                            </p> <!-- .add_cart -->
+                                        </a>
+                                    </div> <!-- .category_text_wrap -->
+                                </li> <!-- 제품3 -->
+
+                                <li> <!-- 제품4 -->
+                                    <div class="category_img_wrap">
+                                        <a href="#">
+                                            <img class="tab3_product" src="img/product_gargle_guava.png"
+                                                alt="3-4_제스트가글_구아바">
+                                        </a>
+                                    </div> <!-- .category_img_wrap -->
+
+                                    <div class="category_text_wrap">
+                                        <a href="#"> <!-- 텍스트 풀 선택 -->
+                                            <div class="sec2_best_text_wrap">
+                                                <p class="product_name">
+                                                    제스트 가글 (구아바)
+                                                </p> <!-- .product_name -->
+
+                                                <div class="price_wrap">
+                                                    <p class="product_price">
+                                                        &#8361; 21,200
+                                                    </p> <!-- .sec2_best_price -->
+
+                                                    <p class="product_price_origin">
+                                                        &#8361; 25,000
+                                                    </p> <!-- product_price_origin -->
+                                                </div> <!-- .price_wrap -->
+                                            </div> <!-- .sec2_best_text_wrap -->
+                                        </a>
+
+                                        <a href="#"> <!-- 카트에 상품 추가하기 -->
+                                            <p class="add_cart">
+                                                Add to Cart <span class="plus">+</span>
+                                            </p> <!-- .add_cart -->
+                                        </a>
+                                    </div> <!-- .category_text_wrap -->
+                                </li> <!-- 제품4 -->
+                            </ul> <!-- tab3 제품 리스트-->
+
+                        </div> <!-- .category_product -->
+                    </div> <!-- #tab3 .tab-pane -->
+
+
+
+
+                    <!-- 탭4 -->
+                    <div id="tab4" class="tab-pane">
+                        <!-- 활성화되면 클래스 active 추가됨 -->
+
+                        <div class="category_product">
+
+                            <ul> <!-- tab4 제품 리스트-->
+                                <li> <!-- 제품1 -->
+                                    <div class="category_img_wrap tab4_img">
+                                        <a href="#">
+                                            <img class="tab4-1_product" src="img/product_marker_yellow.png"
+                                                alt="4-1_제스트_마커펜">
+                                        </a>
+                                    </div> <!-- .category_img_wrap -->
+
+                                    <div class="category_text_wrap">
+                                        <a href="#"> <!-- 텍스트 풀 선택 -->
+                                            <div class="sec2_best_text_wrap">
+                                                <p class="product_name">
+                                                    마커 펜 (옐로우, 핑크, 블랙)
+                                                </p> <!-- .product_name -->
+
+                                                <div class="price_wrap">
+                                                    <p class="product_price">
+                                                        &#8361; 21,200
+                                                    </p> <!-- .sec2_best_price -->
+
+                                                    <p class="product_price_origin">
+                                                        &#8361; 25,000
+                                                    </p> <!-- product_price_origin -->
+                                                </div> <!-- .price_wrap -->
+                                            </div> <!-- .sec2_best_text_wrap -->
+                                        </a>
+
+                                        <a href="#"> <!-- 카트에 상품 추가하기 -->
+                                            <p class="add_cart">
+                                                Add to Cart <span class="plus">+</span>
+                                            </p> <!-- .add_cart -->
+                                        </a>
+                                    </div> <!-- .category_text_wrap -->
+                                </li> <!-- 제품1 -->
+
+                                <li> <!-- 제품2 -->
+                                    <div class="category_img_wrap tab4_img">
+                                        <a href="#">
+                                            <img class="tab4-2_product" src="img/product_cup.png" alt="4-2_제스트_컵">
+                                        </a>
+                                    </div> <!-- .category_img_wrap -->
+
+                                    <div class="category_text_wrap">
+                                        <a href="#"> <!-- 텍스트 풀 선택 -->
+                                            <div class="sec2_best_text_wrap">
+                                                <p class="product_name">
+                                                    머그컵 (옐로우, 라임, 블랙)
+                                                </p> <!-- .product_name -->
+
+                                                <div class="price_wrap">
+                                                    <p class="product_price">
+                                                        &#8361; 21,200
+                                                    </p> <!-- .sec2_best_price -->
+
+                                                    <p class="product_price_origin">
+                                                        &#8361; 25,000
+                                                    </p> <!-- product_price_origin -->
+                                                </div> <!-- .price_wrap -->
+                                            </div> <!-- .sec2_best_text_wrap -->
+                                        </a>
+
+                                        <a href="#"> <!-- 카트에 상품 추가하기 -->
+                                            <p class="add_cart">
+                                                Add to Cart <span class="plus">+</span>
+                                            </p> <!-- .add_cart -->
+                                        </a>
+                                    </div> <!-- .category_text_wrap -->
+                                </li> <!-- 제품2 -->
+
+                                <li> <!-- 제품3 -->
+                                    <div class="category_img_wrap tab4_img">
+                                        <a href="#">
+                                            <img class="tab4-3_product" src="img/product_backpack.png" alt="4-3_제스트_백팩">
+                                        </a>
+                                    </div> <!-- .category_img_wrap -->
+
+                                    <div class="category_text_wrap">
+                                        <a href="#"> <!-- 텍스트 풀 선택 -->
+                                            <div class="sec2_best_text_wrap">
+                                                <p class="product_name">
+                                                    제스트 짐색 스트링 백팩
+                                                </p> <!-- .product_name -->
+
+                                                <div class="price_wrap">
+                                                    <p class="product_price">
+                                                        &#8361; 22,000
+                                                    </p> <!-- .sec2_best_price -->
+
+                                                    <p class="product_price_origin">
+                                                        &#8361; 29,900
+                                                    </p> <!-- product_price_origin -->
+                                                </div> <!-- .price_wrap -->
+                                            </div> <!-- .sec2_best_text_wrap -->
+                                        </a>
+
+                                        <a href="#"> <!-- 카트에 상품 추가하기 -->
+                                            <p class="add_cart">
+                                                Add to Cart <span class="plus">+</span>
+                                            </p> <!-- .add_cart -->
+                                        </a>
+                                    </div> <!-- .category_text_wrap -->
+                                </li> <!-- 제품3 -->
+
+                                <li> <!-- 제품4 -->
+                                    <div class="category_img_wrap tab4_img">
+                                        <a href="#">
+                                            <img class="tab4-4_product" src="img/product_shopping_bag.png"
+                                                alt="4-4_제스트_쇼핑백">
+                                        </a>
+                                    </div> <!-- .category_img_wrap -->
+
+                                    <div class="category_text_wrap">
+                                        <a href="#"> <!-- 텍스트 풀 선택 -->
+                                            <div class="sec2_best_text_wrap">
+                                                <p class="product_name">
+                                                    제스트 쇼핑백
+                                                </p> <!-- .product_name -->
+
+                                                <div class="price_wrap">
+                                                    <p class="product_price">
+                                                        &#8361; 1,500
+                                                    </p> <!-- .sec2_best_price -->
+
+                                                    <p class="product_price_origin">
+                                                        &#8361; 2,000
+                                                    </p> <!-- product_price_origin -->
+                                                </div> <!-- .price_wrap -->
+                                            </div> <!-- .sec2_best_text_wrap -->
+                                        </a>
+
+                                        <a href="#"> <!-- 카트에 상품 추가하기 -->
+                                            <p class="add_cart">
+                                                Add to Cart <span class="plus">+</span>
+                                            </p> <!-- .add_cart -->
+                                        </a>
+                                    </div> <!-- .category_text_wrap -->
+                                </li> <!-- 제품4 -->
+                            </ul> <!-- tab4 제품 리스트-->
+
+                        </div> <!-- .category_product -->
+                    </div> <!-- #tab4 .tab-pane -->
+
+                </div> <!-- category_tab-content -->
+
+            </div> <!-- .sec2_category_wrap -->
+
+        </div> <!-- .sec2_wrap -->
+    </div> <!-- #section2 -->
+
+
+
+    <div id="banner_01">
+        <div class="banner_01_img">
+            <a href="#section3">
+                <img src="img/zest_banner_01.jpg" alt="find_your_zest_banner">
+            </a>
+        </div> <!-- .banner_01_img -->
+    </div> <!-- banner_01 -->
+
+
+
+
+    <div id="section3">
+        <!-- 1920*685-->
+
+        <div class="sec3_wrap">
+
+            <div class="test_page">
+                <!-- 1320*681 (1920-180 왼쪽 위치시작 / 오른쪽은 1920-300-120)-->
+
+                <!-- 탭1 -->
+                <div id="sec3_tab1" class="sec3_tab-pane active">
+
+                    <div class="test_page_wrap_01">
+
+                        <div class="test_page_01">
+                            <span class="Q_number">
+                                Q1.
+                            </span> <!-- .Q_number -->
+
+                            <h4 class="test_Q">
+                                휴가를 계획 중이라면
+                                <br>어떤 여행을 하고 싶으세요?
+                            </h4> <!-- .test_Q -->
+
+
+
+                            <ul class="test_btn_wrap">
+                                <li class="test_btn btn_A" data-aos="fade-up" data-aos-duration="600"> <!-- A버튼 -->
+                                    <a href="#">
+                                        <span>A</span>
+                                        <p>
+                                            당연히 휴가에는 바다로!
+                                            <br>&nbsp;&nbsp;시원하게 뛰어 놀아야지🏄‍♂️
+                                        </p>
+                                    </a>
+                                </li> <!-- .test_btn .btn_A -->
+
+                                <li class="test_btn btn_B" data-aos="fade-up" data-aos-duration="1000"> <!-- B버튼 -->
+                                    <a href="#">
+                                        <span>B</span>
+                                        <p>
+                                            조용한 산 속으로 갈래!
+                                            <br>책과 함께 칠링하고 싶어📚
+                                        </p>
+                                    </a>
+                                </li> <!-- .test_btn .btn_B -->
+                            </ul> <!-- .test_btn_wrap -->
+                        </div> <!-- .test_page_01 -->
+
+                    </div> <!-- .test_page_wrap_01 -->
+
+                </div> <!-- #sec3_tab1 .sec3_tab-pane -->
+
+
+                <!-- 탭2 -->
+                <div id="sec3_tab2" class="sec3_tab-pane">
+                    <div class="test_page_wrap_02">
+
+                        <div class="test_page_02">
+
+                            <h4 class="test_page_02_text">
+                                가장 잘 어울리는
+                                <br><strong>ZEST</strong>를 찾고 있어요 ···
+                            </h4> <!-- .test_page_02_text -->
+
+                            <img class="product_all" src="img/product_all.png" alt="product_all" draggable="false">
+
+                        </div> <!-- .test_page_02 -->
+
+                    </div> <!-- .test_page_wrap_02 -->
+
+                </div> <!-- #sec3_tab2 .sec3_tab-pane -->
+
+
+
+
+                <!-- 탭3 -->
+                <div id="sec3_tab3" class="sec3_tab-pane">
+
+                    <div class="test_page_wrap_03">
+
+                        <div class="test_page_03">
+
+                            <div class="test_page_03_img_wrap">
+                                <img class="test03_img_1" src="img/product_toothpaste_lemon.png" alt="제스트치약_레몬">
+                                <img class="test03_img_2" src="img/product_gargle_lemon.png" alt="제스트가글_레몬">
+                                <img class="test03_img_3" src="img/product_chewable_toothpaste_lemon.png"
+                                    alt="제스트츄어블치약_레몬">
+                            </div> <!-- .test_page_03_img_wrap -->
+
+
+
+                            <ul class="test_page_03_text">
+                                <li class="test_page_03_text_title"> <!-- 제목 -->
+                                    <p>당신과 가장 잘 어울리는 제스트는</p>
+                                    <span class="test_result_name">LEMON ZEST</span>
+
+                                    <!-- <div class="lemon">
+                                        <img src="img/find_your_zest_lemon_2.png" alt="lemon_img">
+                                    </div> -->
+
+                                </li> <!-- .test_page_03_text_title -->
+
+                                <li>
+                                    <p class="recommend_slogan">상큼한 향을 좋아하는 분들께 추천드리는 제품이에요!</p>
+                                </li>
+
+                                <li class="recommend_text">
+                                    <p>1. Zest Toothpaste - Lemon flavor</p>
+                                    <p>2. Zest Chewable toothpaste - Lemon flavor</p>
+                                    <p>3. Zest Gargle - Lemon flavor</p>
+                                </li>
+
+                                <li class="test_page_03_btn"> <!-- 버튼 -->
+                                    <a href="#">View more</a>
+                                    <a href="#">Add to Cart <span class="plus">+</span></a>
+                                </li> <!-- .test_page_03_btn -->
+
+                            </ul> <!-- .test_page_03_text -->
+
+                        </div> <!-- .text_page_03 -->
+
+                    </div> <!-- .text_page_wrap_03 -->
+
+                </div> <!-- #sec3_tab3 .sec3_tab-pane -->
+
+            </div> <!-- .test_page -->
+
+
+            <div class="test_text">
+                <!-- 245*215 (1920-300 오른쪽 위치)-->
+
+                <ul class="test_list">
+                    <li> <!-- 제목 -->
+                        <h4>Find Your ZEST</h4>
+                    </li>
+
+                    <li> <!-- list-1 -->
+                        <a href="#" data-target="sec3_tab1" class="active">Find your match</a>
+                    </li>
+
+                    <li> <!-- list-2 -->
+                        <a href="#" data-target="sec3_tab2">Mixing your Zest</a>
+                    </li>
+
+                    <li> <!-- list-3 -->
+                        <a href="#" data-target="sec3_tab3">Meet your Zest</a>
+                    </li>
+
+                </ul> <!-- .test_list -->
+
+            </div> <!-- .test_text -->
+
+        </div> <!-- .sec3_wrap -->
+
+    </div> <!-- #section3 -->
+
+
+
+
+
+    <div id="section4">
+
+        <div class="sec4_wrap">
+            <!-- 1920*1820 -->
+
+            <div class="sec4_updates">
+                <!-- 1320*1035 -->
+
+                <h3 class="section_title sec4_title" data-aos="flip-left" data-aos-duration="1000">
+                    <!-- 마진 탑100 / 바텀80 -->
+                    Updates
+                </h3>
+
+                <div class="updates_img_wrap">
+                    <!-- 1320*540 -->
+
+                    <div class="updates_img_wrap1">
+                        <!-- 650*540 / 오른쪽 여백 20px-->
+                        <a href="#">
+                            <img src="img/promotion_banner_m0.jpg" alt="promotion_banner0">
+                        </a>
+                    </div> <!-- .updates_img_wrap1 -->
+
+                    <div class="updates_img_wrap2">
+                        <!-- 650*540 / 사이 여백 가로세로 모두 20px -->
+                        <ul>
+                            <li> <!-- 1 -->
+                                <a href="#">
+                                    <img src="img/promotion_banner_m1.jpg" alt="promotion_banner1">
+                                </a>
+                            </li>
+
+                            <li> <!-- 2 -->
+                                <a href="#">
+                                    <img src="img/promotion_banner_m2.jpg" alt="promotion_banner2">
+                                </a>
+                            </li>
+
+                            <li> <!-- 3 -->
+                                <a href="#">
+                                    <img src="img/promotion_banner_m3.jpg" alt="promotion_banner3">
+                                </a>
+                            </li>
+
+                            <li> <!-- 4 -->
+                                <a href="#">
+                                    <img src="img/promotion_banner_m4.jpg" alt="promotion_banner4">
+                                </a>
+                            </li>
+                        </ul>
+                    </div> <!-- .updates_img_wrap2 -->
+                </div> <!-- .updates_img_wrap -->
+
+
+                <div class="updates_btn">
+                    <!-- 마진 탑 80 / 바텀 100 -->
+                    <a href="#">More +</a>
+                </div> <!-- .updates_btn -->
+
+
+            </div> <!-- .sec4_updates -->
+
+
+
+
+
+            <div class="sec4_sns">
+
+                <div class="sns_text">
+                    <!-- 마진 탑100 / 바텀60 -->
+                    <h4 class="sns_title">
+                        @zest.official
+                    </h4>
+
+                    <p class="sns_slogan">
+                        Be Part of the Fun, Stay Tuned for More Inspiration
+                    </p>
+                </div> <!-- .sns_text -->
+
+
+                <div class="sns_img_wrap">
+                    <!-- 1320*300 -->
+
+                    <button class="btn prev">
+                        <img src="img/sns_icon_btn_left.png" alt="btn_left">
+                    </button>
+
+
+                    <div class="sns_viewport">
+                        <ul class="sns_img">
+                            <li> <!-- 1 -->
+                                <a href="https://www.instagram.com/" target="_blank">
+                                    <img src="img/sns_insta_1.jpg" alt="instagram_01">
+                                    <div class="box1"></div>
+                                </a>
+                                <div class="sns_hover_icon">
+                                    <img src="./img/sns_icon_insta.png" alt="insta_icon">
+                                </div>
+                            </li>
+
+                            <li> <!-- 2 -->
+                                <a href="https://www.instagram.com/" target="_blank">
+                                    <img src="img/sns_insta_2.jpg" alt="instagram_02">
+                                    <div class="box1"></div>
+                                </a>
+                                <div class="sns_hover_icon">
+                                    <img src="./img/sns_icon_insta.png" alt="insta_icon">
+                                </div>
+                            </li>
+
+                            <li> <!-- 3 -->
+                                <a href="https://www.instagram.com/" target="_blank">
+                                    <img src="img/sns_insta_3.jpg" alt="instagram_03">
+                                    <div class="box1"></div>
+                                </a>
+                                <div class="sns_hover_icon">
+                                    <img src="./img/sns_icon_insta.png" alt="insta_icon">
+                                </div>
+                            </li>
+
+                            <li> <!-- 4 -->
+                                <a href="https://www.instagram.com/" target="_blank">
+                                    <img src="img/sns_insta_4.jpg" alt="instagram_04">
+                                    <div class="box1"></div>
+                                </a>
+                                <div class="sns_hover_icon">
+                                    <img src="./img/sns_icon_insta.png" alt="insta_icon">
+                                </div>
+                            </li>
+
+                            <li> <!-- 5 -->
+                                <a href="https://www.instagram.com/" target="_blank">
+                                    <img src="img/sns_insta_5.jpg" alt="instagram_05">
+                                    <div class="box1"></div>
+                                </a>
+                                <div class="sns_hover_icon">
+                                    <img src="./img/sns_icon_insta.png" alt="insta_icon">
+                                </div>
+                            </li>
+
+                            <li> <!-- 6 -->
+                                <a href="https://www.instagram.com/" target="_blank">
+                                    <img src="img/sns_insta_6.jpg" alt="instagram_06">
+                                    <div class="box1"></div>
+                                </a>
+                                <div class="sns_hover_icon">
+                                    <img src="./img/sns_icon_insta.png" alt="insta_icon">
+                                </div>
+                            </li>
+                        </ul> <!-- .sns_img -->
+                    </div> <!-- .sns_viewport -->
+
+
+                    <button class="btn next">
+                        <img src="img/sns_icon_btn_right.png" alt="btn_right">
+                    </button>
+
+                </div> <!-- .sns_img_wrap -->
+
+
+
+                <div class="updates_btn">
+                    <!-- 마진 탑 60 / 바텀 100 -->
+                    <a href="https://www.instagram.com/" target="_blank">Follow us</a>
+                </div> <!-- .updates_btn -->
+
+            </div> <!-- .sec4_sns -->
+
+
+        </div> <!-- .sec4_wrap -->
+
+    </div> <!-- #section4 -->
+
+
+
+    <div id="section5">
+        <div class="sec5_wrap" data-aos="zoom-in" data-aos-duration="1000">
+            <a href="#">
+                <img src="img/promotion_banner_popup.jpg" alt="find_your_zest_popup_banner">
+            </a>
+        </div> <!-- sec5_wrap -->
+    </div> <!-- #section5 -->
+
+
+
+    <footer id="footer">
+
+        <div class="footer_wrap">
+            <!-- 1330*236 (마진 100)-->
+
+            <div class="footer_left">
+
+                <h4>Company Info</h4>
+
+                <div class="company_info">
+                    <ul class="info_01">
+                        <li><a href="#section1">About</a></li>
+                        <li><a href="#">Store</a></li>
+                        <li><a href="#">Cs Center</a></li>
+                    </ul> <!-- .info_01 -->
+
+                    <ul class="info_02">
+                        <li><a href="#">Membership</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul> <!-- .info_02 -->
+                </div> <!-- .company_info -->
+
+                <p>
+                    COPYRIGHTⓒ ZEST. ALL RIGHTS RESERVED.
+                </p>
+
+            </div> <!-- .footer_left -->
+
+
+            <div class="footer_right">
+
+                <ul class="sns_icon">
+                    <li><a href="https://www.youtube.com" target="_blank"><img src="img/sns_icon_youtube.png"
+                                alt="youtube_link"></a></li>
+                    <li><a href="https://www.facebook.com" target="_blank"><img src="img/sns_icon_facebook.png"
+                                alt="facebook_link"></a></li>
+                    <li><a href="https://x.com" target="_blank"><img src="img/sns_icon_twitter.png" alt="x_link"></a>
+                    </li>
+                </ul> <!-- .sns_icon -->
+
+                <p>주식회사 제스트 대표이사 : 안영인 고객센터 : 1800-0824 운영시간 : 09:30 ~ 18:00, (주말/공휴일 휴무)
+                    <br>주소 : 48303 부산 수영구 광안로62번길 39 (광안동) 제스트
+                </p>
+
+                <p>개인정보보호책임자 : 안영인 (privacy@zest.com) 통신판매업신고번호 : 제 2025-부산수영-0824호
+                    <br>사업자등록번호 : 010-08-24080 [사업자정보확인] 호스팅제공자 : 카페24(주)
+                </p>
+
+            </div> <!-- .footer_right -->
+
+        </div> <!-- .footer_wrap -->
+    </footer> <!-- #footer -->
+
+
+
+
+
+    <!-- google CDN 방식 -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <!-- 제어코드 연결 -->
+    <script src="js/script.js"></script>
+
+
+    <!-- https://github.com/michalsnik/aos -->
+    <!-- AOS 적용하기 -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+
+
+
+</body>
+
+</html>
