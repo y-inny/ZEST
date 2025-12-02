@@ -525,33 +525,33 @@ body {
 .best_img1 {
     /* 베스트 - 츄어블 치약 이미지 */
     position: absolute;
-    top: 13px;
-    left: -62px;
-    width: 150%;
+    top: 28px;
+    left: 17px;
+    width: 90%;
 }
 
 .best_img2 {
     /* 베스트 - 오리지널 치약 이미지 */
     position: absolute;
-    top: 30px;
-    left: -6px;
-    width: 100%;
+    top: -2px;
+    left: -8px;
+    width: 105%;
 }
 
 .best_img3 {
     /* 베스트 - 가글 이미지 */
     position: absolute;
-    top: 21px;
-    left: -22px;
-    width: 120%;
+    top: 6px;
+    left: 3px;
+    width: 100%;
 }
 
 .best_img4 {
     /* 베스트 - 백팩 이미지 */
     position: absolute;
-    top: 20px;
-    left: -30px;
-    width: 125%;
+    top: 15px;
+    left: 6px;
+    width: 95%;
 }
 
 .sec2_best_text_wrap {
@@ -748,15 +748,15 @@ body {
 .tab1_product {
     /* tab1_공통) 츄어블 치약 이미지 조절 */
     position: absolute;
-    top: 0px;
-    left: -50px;
-    width: 150%;
+    top: 6px;
+    left: 10px;
+    width: 90%;
 }
 
 .tab2_product {
     /* tab2_공통) 오리지널치약 이미지 조절 */
     position: absolute;
-    top: 20px;
+    top: -2px;
     left: -12px;
     width: 105%;
 }
@@ -765,9 +765,9 @@ body {
 .tab3_product {
     /* tab3_공통) 가글 이미지 조절 */
     position: absolute;
-    top: 8px;
-    left: -28px;
-    width: 130%;
+    top: 3px;
+    left: -2px;
+    width: 100%;
 }
 
 
@@ -782,17 +782,17 @@ body {
 .tab4-2_product {
     /* 머그컵 이미지 조절 */
     position: absolute;
-    top: 23px;
-    left: -18px;
-    width: 115%;
+    top: 10px;
+    left: 10px;
+    width: 90%;
 }
 
 .tab4-3_product {
     /* 백팩 이미지 조절 */
     position: absolute;
-    top: 20px;
-    left: -20px;
-    width: 115%;
+    top: 8px;
+    left: 4px;
+    width: 95%;
 }
 
 .tab4_img {
@@ -802,9 +802,9 @@ body {
 .tab4-4_product {
     /* 쇼핑백 이미지 조절 */
     position: absolute;
-    top: 20px;
-    left: -4px;
-    width: 105%;
+    top: 15px;
+    left: 16px;
+    width: 88%;
 }
 
 .category_text_wrap {
