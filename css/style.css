@@ -40,6 +40,7 @@ body {
 }
 #wrap {
     min-width: 1600px;
+    overflow: hidden;
 }
 #header {
     position: fixed;
@@ -855,10 +856,6 @@ body {
     box-sizing: border-box;
 }
 
-.banner_01_img img:hover {
-    filter: blur(0px);
-    transition: all 1.2s ease-out;
-}
 
 
 /* section3 */
@@ -874,7 +871,7 @@ body {
 }
 
 .test_page {
-    width: 100%;
+    width: 70%;
     height: 681px;
     background-color: #111;
     /* padding-left: 0px; */
@@ -891,7 +888,7 @@ body {
 
 /* 테스트 페이지 내부 */
 .test_page_wrap_01 {
-    width: 1320px;
+    width: 1260px;
     /* margin: 0 auto; */
 }
 
@@ -905,6 +902,7 @@ body {
 .Q_number {
     font-weight: 400;
     font-size: 22px;
+    padding-left: 15px;
 }
 
 .test_Q {
@@ -1029,13 +1027,13 @@ body {
 
 /* 테스트페이지-2 */
 .test_page_wrap_02 {
-    width: 1320px;
+    width: 1200px;
     height: 681px;
     margin: 0 auto;
     color: #fff;
     overflow: hidden;
     position: relative;
-    padding-right: 60px;
+    padding-left: 75px;
 }
 
 .test_page_02 {
@@ -1049,7 +1047,7 @@ body {
     line-height: 1.5em;
     margin-top: 50px;
     margin-bottom: 65px;
-    /* padding-left: 20px; */
+    padding-left: 20px;
 }
 
 .test_page_02_text strong {
@@ -1059,7 +1057,7 @@ body {
 .product_all {
     position: absolute;
     top: 270px;
-    left: 100px;
+    left: 150px;
     width: 80%;
     animation: product-all 30s linear infinite;
 
@@ -1069,7 +1067,7 @@ body {
 
 @keyframes product-all {
     0% {
-        transform: rotate(-15deg);
+        transform: rotate(-38deg);
     }
 
     100% {
@@ -1099,11 +1097,8 @@ body {
 
     display: flex;
 
-    background: url(../img/find_your_zest_lemon_2.png) right 120px top 60px no-repeat;
+    background: url(../img/find_your_zest_lemon_2.png) right 135px top 60px no-repeat;
 }
-
-
-/* 여기고치기 251202 */
 
 
 
@@ -1129,28 +1124,28 @@ body {
 
 .test03_img_1 {
     /* 제스트치약 레몬 */
-    width: 32%;
+    width: 25%;
     position: absolute;
-    top: 60px;
-    left: 220px;
+    top: 120px;
+    left: 340px;
     z-index: 8;
 }
 
 .test03_img_2 {
     /* 제스트가글 레몬 */
-    width: 28%;
+    width: 21%;
     position: absolute;
-    top: 160px;
-    left: 410px;
+    top: 190px;
+    right: 545px;
     z-index: 9;
 }
 
 .test03_img_3 {
     /* 제스트츄어블치약 레몬 */
-    width: 29%;
+    width: 18%;
     position: absolute;
-    top: 240px;
-    left: 185px;
+    top: 285px;
+    left: 348px;
     z-index: 10;
 }
 
