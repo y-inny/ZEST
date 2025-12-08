@@ -31,16 +31,13 @@ body {
     font-size: 14px;
     line-height: 1.5em;
     font-weight: 400;
-
     box-sizing: border-box;
     /* padding-top: 60px; */
-    overflow-x: hidden;
-
     /* background-color: #222; */
 }
 #wrap {
     min-width: 1600px;
-    overflow: hidden;
+  
 }
 #header {
     position: fixed;
@@ -57,9 +54,8 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-
-    width: 100%;
-    max-width: 1600px;
+    width: 1600px;
+    /* max-width: 1600px; */
     margin: 0 auto;
     height: 60px;
     background-color: #111;
